@@ -11,6 +11,7 @@ app.UseSwaggerUI();
 app.UseHttpsRedirection();
 
 // GET UTC
+// teste pipeline
 app.MapGet("time/utc", () => Results.Ok(DateTime.UtcNow));
 
 await app.RunAsync();
